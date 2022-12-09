@@ -1,0 +1,86 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75); /*paragraphs*/
+  --very-light-gray: hsl(0, 0%, 95%); /*background, headings, buttons*/
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.938rem;
+}
+
+.container {
+  padding: 3.75rem 1.5rem;
+}
+
+.card-icon,
+.card-title,
+.card-description,
+.link a {
+  padding-bottom: 2rem;
+}
+
+.card {
+  padding: 3.5rem;
+}
+
+.card-sedans {
+  background-color: var(--bright-orange);
+}
+
+.card-suvs {
+  background-color: var(--dark-cyan);
+}
+
+.card-luxury {
+  background-color: var(--very-dark-cyan);
+}
+
+.card-title {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--very-light-gray);
+}
+
+.card-description {
+  line-height: 1.5rem;
+  color: var(--transparent-white);
+}
+
+.link {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  background-color: var(--very-light-gray);
+}
+
+@media (width >=1440px) {
+  article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .card {
+    height: 384px;
+    width: 215px;
+  }
+
+  .card-description {
+    padding-bottom: 5rem;
+  }
+}
