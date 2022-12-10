@@ -86,7 +86,7 @@ body {
 }
 
 @media (width >=1440px) {
-  article {
+  main {
     display: flex;
     justify-content: center;
     align-items: center;
